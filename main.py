@@ -1,8 +1,18 @@
+""""
+Things I need to do
+Select a number
+Select a mathematic equation
+input a number
+print the total
+select a mathematic equation
+When user wants to exit, end program
+"""
+
+
 
 def add(x, y):
  while True:
     if number.isdigit():
-     else number x + y :
         return x + y
 
 
@@ -31,10 +41,11 @@ number = 0
 
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
+for num in range(number):
 
-while number !="":
+    while number !="":
+        number = input("Enter number or hit enter to quit")
 
-    number= input("Enter number or hit eneter to quit")
 if choice == '1':
     print(num1, "+", num2, "=", add(num1, num2))
 
