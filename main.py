@@ -1,18 +1,5 @@
-""""
-Things I need to do
-Select a number
-Select a mathematic equation
-input a number
-print the total
-select a mathematic equation
-When user wants to exit, end program
-"""
-
-
 
 def add(x, y):
- while True:
-    if number.isdigit():
         return x + y
 
 
@@ -28,34 +15,39 @@ def multiply(x, y):
 
 def divide(x, y):
     return x / y
+run= True
+
+while(run):
+
+    print("Select operation.")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiply")
+    print("4.Divide")
+    print("5.Quit")
+
+    choice = input("Enter choice(1/2/3/4/5):")
+
+    if choice !="5":
+        num1 = int(input("Enter first number: "))
+        num2 = int(input("Enter second number: "))
 
 
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
 
-choice = input("Enter choice(1/2/3/4):")
-number = 0
+    if choice == '1':
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-for num in range(number):
+        print(num1, "+", num2, "=", add(num1, num2))
 
-    while number !="":
-        number = input("Enter number or hit enter to quit")
+    elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
 
-if choice == '1':
-    print(num1, "+", num2, "=", add(num1, num2))
+    elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
 
-elif choice == '2':
-    print(num1, "-", num2, "=", subtract(num1, num2))
-
-elif choice == '3':
-    print(num1, "*", num2, "=", multiply(num1, num2))
-
-elif choice == '4':
-    print(num1, "/", num2, "=", divide(num1, num2))
-else:
-    "Done"
+    elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+    elif choice == '5':
+        run = False
+        print("Quitting")
+    else:
+            print("Invalid choice")
